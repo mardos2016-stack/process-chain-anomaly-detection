@@ -40,7 +40,7 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/<username>/process-chain-anomaly-detection.git
+git clone https://github.com/mardos2016-stack/process-chain-anomaly-detection.git
 cd process-chain-anomaly-detection
 ```
 
