@@ -76,7 +76,7 @@ pip install -e .
 ### Обучение модели
 
 ```bash
-python -m process_chain_model.cli --mode train --input examples/train.xlsx --order 1
+python -m process_chain_model.cli --mode train --input data/examples/train.xlsx --order 1
 ```
 
 Будет создан файл модели:
@@ -90,7 +90,7 @@ markov_order1.pkl
 ### Тестирование
 
 ```bash
-python -m process_chain_model.cli --mode test --input examples/test.xlsx --model-file markov_order1.pkl
+python -m process_chain_model.cli --mode test --input data/examples/test.xlsx --model-file markov_order1.pkl
 ```
 
 ---
@@ -102,10 +102,7 @@ python -m process_chain_model.cli --mode test --input examples/test.xlsx --model
 - `-1` — аномалия  
 
 ```bash
-python -m process_chain_model.cli \
-  --mode evaluate \
-  --input test_labeled.xlsx \
-  --model-file markov_order1.pkl
+python -m process_chain_model.cli --mode evaluate --input test.xlsx --model-file markov_order1.pkl
 ```
 
 ---
@@ -113,10 +110,7 @@ python -m process_chain_model.cli \
 ### Визуализация модели
 
 ```bash
-python -m process_chain_model.cli \
-  --mode visualize \
-  --model-file markov_order1.pkl \
-  --output-dir results
+python -m process_chain_model.cli --mode visualize --model-file markov_order1.pkl --output-dir results
 ```
 
 ---
