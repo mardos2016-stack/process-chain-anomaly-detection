@@ -102,7 +102,7 @@ python -m process_chain_model.cli --mode test --input data/examples/test.xlsx --
 - `-1` — аномалия  
 
 ```bash
-python -m process_chain_model.cli --mode evaluate --input test.xlsx --model-file markov_order1.pkl
+python -m process_chain_model.cli --mode evaluate --input data/examples/test.xlsx --model-file markov_order1.pkl
 ```
 
 ---
