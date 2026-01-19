@@ -1,0 +1,2 @@
+[console_scripts]
+process-chain-model = process_chain_model.cli:main

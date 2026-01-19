@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "process-chain-anomaly-detection"
+version = "0.1.0"
+description = "Anomaly detection in Windows process chains using Markov models"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "<YOUR NAME>"}]
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+  "networkx",
+  "openpyxl",
+]
+
+[project.scripts]
+process-chain-model = "process_chain_model.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
