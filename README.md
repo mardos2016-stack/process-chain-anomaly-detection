@@ -157,8 +157,8 @@ process-chain-anomaly-detection/
 │
 ├── tests/
 ├── data/examples/
-    ├── test.xlsx
-    └── train.xlsx
+│   ├── test.xlsx
+│   └── train.xlsx
 ├── results/
 ├── requirements.txt
 ├── README.md
