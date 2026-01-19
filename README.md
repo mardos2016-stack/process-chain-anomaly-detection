@@ -76,10 +76,7 @@ pip install -e .
 ### Обучение модели
 
 ```bash
-python -m process_chain_model.cli \
-  --mode train \
-  --input train.xlsx \
-  --order 1
+python -m process_chain_model.cli --mode train --input examples/train.xlsx --order 1
 ```
 
 Будет создан файл модели:
@@ -93,10 +90,7 @@ markov_order1.pkl
 ### Тестирование
 
 ```bash
-python -m process_chain_model.cli \
-  --mode test \
-  --input test.xlsx \
-  --model-file markov_order1.pkl
+python -m process_chain_model.cli --mode test --input examples/test.xlsx --model-file markov_order1.pkl
 ```
 
 ---
